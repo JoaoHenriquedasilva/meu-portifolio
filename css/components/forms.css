@@ -1,0 +1,63 @@
+:root{
+    --cor-do-header:#ffffff;
+    --link:#3498db ;
+    --botao:#48762e;
+    --teste:#354d2a ;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section > section{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    justify-content: center;
+}
+section > form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-do-header);
+    padding: 2rem;
+    height: 523px;
+    border-radius: black solid 5px;
+}
+form > input{
+    padding: 0.75rem 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form select{
+    padding: 0.75rem 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section > .mapa{
+    height: 523px;
+}
+/*main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 3rem;
+}
+section > form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-do-header);
+    padding: 2rem;
+    height: 523px;
+} */ 

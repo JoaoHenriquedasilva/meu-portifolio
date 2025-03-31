@@ -28,5 +28,8 @@ nav a {
     color: black;
 }
 nav > div > a:hover {
-    color: var(--cor-do-link-hover);
+    color: var(--botao);
+    transition: color 0.5s ease;
+    text-decoration: underline;
+    
 }
