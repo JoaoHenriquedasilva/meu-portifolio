@@ -1,2 +1,7 @@
 /* style.css - Arquivo principal */
-
+:root{
+    --cor-de-fundo:#ecf0f1;
+}
+body{
+    background-color: var(--cor-de-fundo);
+}
