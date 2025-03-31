@@ -1,0 +1,32 @@
+:root{
+    --cor-do-header:#ffffff;
+    --link:#3498db ;
+    --botao:#48762e;
+    --teste:#354d2a ;
+    
+}
+header{
+    background-color: var(--cor-do-header);
+    height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header > nav > a{
+    font-weight: bold;
+    color: var(--teste);
+    
+}
+header > nav > a > span{
+    color: var(--botao);
+}
+nav a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+nav > div > a:hover {
+    color: var(--cor-do-link-hover);
+}
