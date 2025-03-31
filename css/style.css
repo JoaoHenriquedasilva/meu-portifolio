@@ -9,21 +9,23 @@ body{
     background-color: var(--cor-de-fundo);
     font-family: 'Poppins', sans-serif;
 }
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
 .conteiner{
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    
     grid-template-areas: 
-    'header header header'
-    'main    main    main'
-    'footer  footer  footer'
+    'inicio inicio inicio'
+    'meio meio meio'
+    'fim fim fim'
     ;
 }
+header{
+    grid-area: inicio;
+}
+main{
+    grid-area: meio;
+}
+footer{
+    grid-area: fim;
+}
+
