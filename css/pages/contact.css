@@ -1,0 +1,21 @@
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.section > .mapa{
+    height: 523px;
+}
+.mapa > h3{
+    margin: 5px;
+}
+.mapa p{
+    margin-bottom: 25px;
+}
+.section{
+    margin-bottom: 25px;
+}

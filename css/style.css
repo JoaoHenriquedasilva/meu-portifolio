@@ -1,6 +1,10 @@
 /* style.css - Arquivo principal */
 :root{
     --cor-de-fundo:#ecf0f1;
+    --cor-do-header:#ffffff;
+    --link:#3498db ;
+    --botao:#48762e;
+    --teste:#354d2a ;
 }
 *{
     margin: 0px;
@@ -12,7 +16,6 @@ body{
 .conteiner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
     grid-template-areas: 
     'inicio inicio inicio'
     'meio meio meio'
