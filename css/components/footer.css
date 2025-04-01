@@ -2,5 +2,23 @@ footer{
     background-color: #354d2a;
     height: 300px;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+footer p{
+    width: 350px;
+    margin-top: 35px;
+    color: #777777;
+}
+.link{
+    display: flex;
+    margin-top: 35px;
+    
+}
+.link hr{
+    margin-top: 15px;
+    border: none; /* Remove o estilo padrão */
+    height: 4px; /* Define a altura da linha */        
+    background-color: green; /* Define a cor da linha */
+    width: 40px;
 }
