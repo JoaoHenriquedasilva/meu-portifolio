@@ -1,5 +1,8 @@
 footer{
     background-color: #354d2a;
+    
+}
+.extra{
     height: 300px;
     display: flex;
     justify-content: space-evenly;
@@ -34,3 +37,9 @@ footer p{
     color: #777777;
     padding: 7px;
 }
+.hr{
+    margin: auto;
+    width: 400px;
+    margin-top: 20px;
+}
+
