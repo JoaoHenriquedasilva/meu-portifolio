@@ -32,4 +32,6 @@ main{
 footer{
     grid-area: fim;
 }
-
+h1{
+    font-size: 2rem;
+}

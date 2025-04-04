@@ -1,0 +1,60 @@
+a{
+    text-decoration: none;
+    color: var(--cor-do-header);
+}
+button{
+    background: none;
+}
+.fotos h1{
+    font-size: 2rem;
+}
+.fotos{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+}
+.cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.positionrelative{
+    position: relative;
+    height: auto;
+}
+.position{
+    position: absolute;
+    background-color: var(--cor-do-header);
+    top: 64.4%;
+    height: 11.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* top: 35;
+    width: 79.6vh;
+    height: 11.1vh; */
+}
+.positionrelative > img{
+    height: 86%;
+    width: 100%; 
+}
+.positionrelative > button{
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    display: none;
+    padding: 10px 20px;
+}
+.positionrelative:hover > button{
+    display: inline;
+    border: 2px solid var(--botao);
+}
+.positionrelative:hover > img{
+    filter: brightness(50%);
+    transition: filter 0.5s ease;
+}
+button:hover{
+    color: var(--cor-do-header);
+    background: var(--botao);
+
+}
