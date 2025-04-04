@@ -1,0 +1,14 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: var(--cor-do-header);
+}
+body{
+    background-color: var(--cor-de-fundo);
+}

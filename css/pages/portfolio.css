@@ -20,16 +20,17 @@ button{
 }
 .positionrelative{
     position: relative;
-    height: auto;
+    height: 86%;
+    
 }
+
 .position{
     position: absolute;
     background-color: var(--cor-do-header);
     top: 64.4%;
-    height: 11.5vh;
+    height: 14.7vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     /* top: 35;
     width: 79.6vh;
     height: 11.1vh; */
@@ -56,5 +57,13 @@ button{
 button:hover{
     color: var(--cor-do-header);
     background: var(--botao);
-
+}
+.position > h3{
+    margin-top: 15px;
+}
+.position > span {
+    color: green;
+    border: 2px solid green;
+    width: 10%;
+    
 }
