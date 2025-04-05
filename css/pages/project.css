@@ -1,14 +1,57 @@
 main{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.9fr 1.2fr 0.9fr;
     place-items: center;
+    background-color: var(--cor-de-fundo);
 }
 .info{
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    background-color: var(--cor-do-header);*/
     background-color: var(--cor-do-header);
+    display: grid;
+    place-items: center;
+    gap: 25px;
 }
-body{
-    background-color: var(--cor-de-fundo);
+.teste > h1{
+    color: var(--teste);
+}
+.teste{
+    margin-left: 20px;
+}
+#voltar{
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+.section2{
+    display: grid;
+    gap: 20px;
+}
+.cliente{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height:189px;
+    gap: 10px;
+}
+.galeria > img {
+    width: 100%; /* Ajusta a largura para ocupar o espaço da célula */
+    height: 55%; /* Mantém a proporção da imagem */
+}
+.voltarpor a{
+    text-decoration: none;
+    color: green;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+button:hover a{
+    color: white;
 }
