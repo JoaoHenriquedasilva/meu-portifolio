@@ -41,18 +41,22 @@
                     <form action="#" method="POST">
                         <!-- Criar os elementos do form como informado no layout -->
                         <label for="nome">Nome completo:</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required minlength="3" maxlength="50" pattern="[A-Za-zÀ-ÿ\s]+">
+
                         <label for="email">Email: </label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
+
                         <label for="opcao">Assunto</label>
-                        <select id="opcoes" name="opcoes">
+                        <select id="opcoes" name="opcoes" required>
                             <option value="opcao">Selecione um assunto</option>
                             <option value="opcao1">Opção 1</option>
                             <option value="opcao2">Opção 2</option>
                             <option value="opcao3">Opção 3</option>
                         </select>
+                        
                         <label for="textarea">Mensagem</label>
-                        <textarea name="Mensagem" id="textarea"></textarea>
+                        <textarea name="Mensagem" id="textarea" required minlength="10" maxlength="500"></textarea>
+                        
                         <button>Enviar Mensagem</button>
                 
                     </form>

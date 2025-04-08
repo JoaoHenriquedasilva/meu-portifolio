@@ -1,11 +1,11 @@
+/*Nessa tela eu só usei flex basicamente no main que é onde está o .section eu alinhei tanto no eixo main quando do cross fora a responsividade eu basicamente só coloquei margem e altura nos elemntos da seção que é onde está o mapa e forms, na responsividade 576px eu defini uma nova altura do mapa e usei o flex-directon column reverse para que o mapa apareça primeiro do que o forms quando for no mobile como usei muito flex tive que usar mexer em muita coisa especifica para poder ficar certinho, deu um belo trabalho no desktop eu simplismente não coloquei nada porque fica do jeito normal como eu queria então em time que ganha não se mexe*/
 .section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 h1{
-    font-size: 2rem;
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .section > .mapa{
     height: 523px;
@@ -37,8 +37,6 @@ h1{
     box-sizing: border-box;
   }
 }
-  
-  /* ✅ RESPONSIVO MOBILE - até 576px */
   @media (max-width: 576px) {
     .section {
       flex-direction: column-reverse;
@@ -56,16 +54,16 @@ h1{
     }
   
     .section form {
-      padding: 20px 15px; /* padding interno para respiro */
-      box-sizing: border-box; /* evita que padding estoure a largura */
-      height: auto; /* deixa altura fluir naturalmente */
+      padding: 20px 15px;
+      box-sizing: border-box; 
+      height: auto; 
     }
   
     .mapa iframe {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        border: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      border: 0;
     }
   
     input,

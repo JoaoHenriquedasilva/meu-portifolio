@@ -4,7 +4,6 @@
 :root{
     --cor-de-fundo:#ecf0f1;
     --cor-do-header:#ffffff;
-    --link:#3498db ;
     --botao:#48762e;
     --teste:#354d2a ;
     --textcinza:#777777;
@@ -16,25 +15,10 @@ body{
     background-color: var(--cor-de-fundo);
     font-family: 'Poppins', sans-serif;
 }
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    'inicio inicio inicio'
-    'meio meio meio'
-    'fim fim fim'
-    ;
-}
-header{
-    grid-area: inicio;
-}
-main{
-    grid-area: meio;
-}
-footer{
-    grid-area: fim;
-}
 h1{
     font-size: 2rem;
+}
+a{
+    text-decoration: none;
 }
 

@@ -1,0 +1,12 @@
+.positionrelative:hover > button{
+    display: inline;
+    border: 2px solid var(--botao);
+}
+.positionrelative:hover > img{
+    filter: brightness(50%);
+    transition: filter 0.5s ease;
+}
+button:hover{
+    color: var(--cor-do-header);
+    background: var(--botao);
+}

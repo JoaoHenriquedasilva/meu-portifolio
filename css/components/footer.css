@@ -1,28 +1,27 @@
+/*Aqui  Ele começou tranquilo e foi ficando mais complicado*/
 footer{
-    background-color: #354d2a;
-    
+    background-color: var(--teste);
 }
 .extra{
     height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #ffffff;
+    color: var(--cor-do-header);
 }
 footer p{
     width: 350px;
     margin-top: 30px;
-    color: #777777;
+    color: var(--textcinza);
 }
 .link{
     display: flex;
-    
 }
 .link hr{
     margin-top: 10px;
-    border: none; /* Remove o estilo padrão */
-    height: 4px; /* Define a altura da linha */        
-    background-color: green; /* Define a cor da linha */
+    border: none; 
+    height: 4px;        
+    background-color: green; 
     width: 40px;
 }
 .rapidos{
@@ -42,4 +41,22 @@ footer p{
     width: 400px;
     margin-top: 20px;
 }
-
+@media (max-width: 576px) {
+    .extra {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    .link {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rapidos {
+        margin-top: 20px;
+    }
+    footer p.hr {
+        width: 90%;
+    }
+}

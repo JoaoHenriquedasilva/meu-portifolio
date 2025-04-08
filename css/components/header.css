@@ -1,3 +1,4 @@
+/*Aqui foi simples de fazer ate, e ficou bem responsivo sem necessariamente ter que usar @media  aqui a parte mais diferente do codigo é o hover que eu coloquei nos links de navegação para que quando passar o mouse em ciman ele fica verde e a linha aparece logo abaixo*/
 header{
     background-color: var(--cor-do-header);
     height: 50px;
@@ -24,5 +25,4 @@ nav > div > a:hover {
     color: var(--botao);
     transition: color 0.5s ease;
     text-decoration: underline;
-    
 }

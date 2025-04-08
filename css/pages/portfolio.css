@@ -12,6 +12,7 @@ button{
     display: grid;
     place-items: center;
     gap: 30px;
+    margin-bottom: 60px;
 }
 .cursos{
     display: grid;
@@ -20,50 +21,67 @@ button{
 }
 .positionrelative{
     position: relative;
-    height: 86%;
-    
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .position{
     position: absolute;
-    background-color: var(--cor-do-header);
-    top: 64.4%;
-    height: 14.7vh;
-    width: 100%;
-    display: grid;
-    /* top: 35;
-    width: 79.6vh;
-    height: 11.1vh; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 1;
 }
 .positionrelative > img{
-    height: 86%;
-    width: 100%; 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .positionrelative > button{
     position: absolute;
-    top: 45%;
-    right: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
     padding: 10px 20px;
-}
-.positionrelative:hover > button{
-    display: inline;
-    border: 2px solid var(--botao);
-}
-.positionrelative:hover > img{
-    filter: brightness(50%);
-    transition: filter 0.5s ease;
-}
-button:hover{
-    color: var(--cor-do-header);
-    background: var(--botao);
+    z-index: 2; 
+    background-color: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .position > h3{
     margin-top: 15px;
 }
 .position > span {
-    color: green;
-    border: 2px solid green;
-    width: 10%;
+    margin-top: 10px;
+    padding: 4px 10px;
+    background-color: rgb(109, 243, 109);
+    color: var(--botao);
+    font-size: 0.75rem;
+    border-radius: 5px;
     
+}
+@media (max-width: 576px) {
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .cursos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
