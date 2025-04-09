@@ -1,3 +1,4 @@
+/* Vamos por partes kkkkkkkkkk Essa é a parte do projeto mais complexa eu acredito aqui eu tive que pensar muito bem o que fazer, pois eu tenho certeza que tem coisa inutil mas não da tempo de tirar, essa parte ficou assim por conta da section que está no main que ou ficava desalinhada com o centro ou a imagem estourava, ou criava uma barra lateral enfim aqui é meio complicado de entender a logica mas tem sentido, e tem coisa que não funciona para nada aqui, pode perceber que a responsividade está especificando cada class ou id por que eu fiz isso, eu precisava controlar o maximo possivel para que não fosse possivel que nada estourasse coisa que aconteceu diversas e diversas vezes*/
 main{
     display: grid;
     grid-template-columns: 1fr minmax(300px, 800px) 1fr;
@@ -13,6 +14,9 @@ main{
 a{
     background: none;
     color: black;
+}
+#voltar > a{
+  margin-top: 50px;
 }
 .info{
     width: 100%;
@@ -31,6 +35,7 @@ a{
 }
 .teste > h1{
     color: var(--teste);
+    margin-top: 20px;
 }
 .teste{
     margin-left: 20px;
@@ -60,15 +65,15 @@ a{
 }
 .galeria > img {
     width: 100%;
-    max-width: 300px; /* controla o tamanho máximo de cada imagem */
+    max-width: 300px; 
     height: auto;
-    margin: 0 auto;   /* centraliza a imagem se for menor que a célula */
+    margin: 0 auto;   
     border-radius: 10px;
     display: block;
 }
 .voltarpor a{
     text-decoration: none;
-    color: green;
+    color: #ffffff;
 }
 button:hover{
     background-color: green;
@@ -83,7 +88,6 @@ button:hover a{
     }
 }
 
-/* Layout para tablets (768px a 991px): 2 colunas */
 @media (min-width: 768px) and (max-width: 991px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
@@ -110,7 +114,6 @@ button:hover a{
       }
 }
 
-/* Layout para celulares (até 576px): 1 coluna */
 @media (max-width: 576px) {
     .galeria {
         grid-template-columns: 1fr;

@@ -1,3 +1,4 @@
+/* Aqui pode parecer complicado mais é simples, falando sobre a responsividade é simplismente cria 1 coluna a mais ou diminui 1 por conta do modelo, o que é mais complexo foi o position que eu usei nos cardes para poder ficar aquela listra branca, coloquei atributos demais tanto na listra quanto no botão que fica "flutuando" como eu estou sem tempo não vou mexer em nada*/
 a{
     text-decoration: none;
     color: var(--cor-do-header);
@@ -5,8 +6,12 @@ a{
 button{
     background: none;
 }
+.menu{
+    background-color: var(--botao);    
+}
 .fotos h1{
     font-size: 2rem;
+    margin-top: 100px;
 }
 .fotos{
     display: grid;

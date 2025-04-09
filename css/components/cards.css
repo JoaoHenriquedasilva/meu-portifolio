@@ -1,3 +1,4 @@
+/*Aqui eu só coloquei os hover que envolvem os cards */
 .positionrelative:hover > button{
     display: inline;
     border: 2px solid var(--botao);
